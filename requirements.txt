@@ -1,0 +1,14 @@
+Django==1.6.1
+South==0.8.4
+django-extensions==1.2.5
+django-h5bp==0.1
+flake8==2.1.0
+fuckit==1.0.1
+ipdb==0.8
+ipython==1.1.0
+mccabe==0.2.1
+pep8==1.4.6
+pyflakes==0.7.3
+requests==2.1.0
+six==1.4.1
+wsgiref==0.1.2
