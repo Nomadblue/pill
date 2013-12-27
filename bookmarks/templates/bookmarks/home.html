@@ -1,0 +1,21 @@
+{% extends 'h5bp.html' %}
+
+{% block main-container %}
+<h1>Starred on GitHub</h1>
+<p><a href="{% url 'github_sync' %}">Sync now</a></p>
+
+<hr/>
+
+{% if user.githubaccount %}
+<ul>
+{% for repo in user.githubaccount.githubrepo_set.all %}
+  <li>{{ repo.name }}</li>
+{% empty %}
+  <p>Star some repos and <a href="{% url 'github_sync' %}">sync</a>!</p>
+{% endfor %}
+</ul>
+{% else %}
+  <p><a href="{% url 'github_connect' %}">Connect your account</a></p>
+{% endif %}
+
+{% endblock %}

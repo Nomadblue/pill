@@ -38,6 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django_extensions',
     'south',
+    'django_h5bp',
+    'crispy_forms',
     'bookmarks',
 )
 
@@ -83,3 +85,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# django-crispy-forms
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
