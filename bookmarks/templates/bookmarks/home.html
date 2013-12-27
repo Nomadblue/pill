@@ -9,7 +9,7 @@
 {% if user.githubaccount %}
 <ul>
 {% for repo in user.githubaccount.githubrepo_set.all %}
-  <li><a href="{{ repo.html_url }}">{{ repo.name }}</a></li>
+  <li><a href="{{ repo.html_url }}">{{ repo.name }}</a>: {{ repo.description }}</li>
 {% empty %}
   <p>Star some repos and <a href="{% url 'github_sync' %}">sync</a>!</p>
 {% endfor %}
