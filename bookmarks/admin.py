@@ -8,7 +8,7 @@ class GitHubAccountAdmin(admin.ModelAdmin):
 
 
 class GitHubRepoAdmin(admin.ModelAdmin):
-    list_display = ('id', 'github_account', 'name', 'owner', 'description', 'html_url', 'description')
+    list_display = ('id', 'github_account', 'name', 'owner', 'description', 'html_url')
 
 
 admin.site.register(GitHubAccount, GitHubAccountAdmin)
